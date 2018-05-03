@@ -35,12 +35,12 @@ function showSlides() {
     slides = document.getElementsByClassName("slide");
     dots = document.getElementsByClassName("dot");
     
-    for (i = 0; i < 2; i++) {
+    for (i = 0; i < 3; i++) {
        slides[i].style.display = "none";  
     }
 
     slideIndex++;
-    if (slideIndex > 2) {
+    if (slideIndex > 3) {
         slideIndex = 1;
     }    
 
