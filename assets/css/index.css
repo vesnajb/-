@@ -494,5 +494,137 @@ body, html{
 }
 .footer{
 	width: 100%;
+	/*background: linear-gradient(#1657af, #00afef);*/
+	/*background: linear-gradient(#00afef, #1657af);*/
 	background-color: #00afef;
+	overflow: hidden;
+}
+.footer .wrap{
+	width:88%;
+	margin:0 auto;
+	margin-top: 50px;
+}
+.footer .wrap .half_wrap{
+	width: calc(100%/2);
+	float:left;
+}
+.footer .wrap .half_wrap .list{
+	width: calc(100%/2);
+	float:left;
+}
+.footer .wrap .half_wrap .list .activ:hover a{
+	color:#1657af;
+}
+.footer .wrap .half_wrap .list .images .activ:hover{
+	color:#1657af;
+}
+.footer .wrap .list ul{
+	margin: 0;
+	padding: 0;
+	width:100%;
+	list-style: none;
+}
+.footer .wrap .list ul li{
+	color:#fff;
+	font-size: 16px;
+	font-weight: 400;
+	margin:10px 0;
+}
+
+.footer .wrap .list ul li a{
+	text-decoration: none;
+	color:#fff;
+}
+.footer .wrap .list ul .cups{
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.footer .wrap .list ul .add_space{
+	padding-bottom: 20px;
+}
+.footer .wrap .list ul li .images{
+	width: 100%;
+	line-height: 32px;
+	height: 32px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+.footer .wrap .list ul li .images:hover .fb{
+	background-image: url(../images/icons/facebook.png);
+}.footer .wrap .list ul li .images:hover .skype{
+	background-image: url(../images/icons/skype_b.png);
+}
+.footer .wrap .list ul li .images img{
+	float: left;
+}
+.footer .wrap .list ul li .images h3{
+	float: left;
+	margin: 0;
+	padding:0;
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 15px;
+}
+.footer .logo{
+	margin:0;
+	width:100%;
+}
+.footer .logo a{
+	width:250px;
+	height:73px;
+	margin:5px 0 0 0;
+	padding:0;
+	background:url("../images/icons/logo_mk.png");
+	display: inline-block;
+	background-size: 100%;
+}
+.map_frame{
+	width:100%;
+	height: 300px;
+	margin:0 auto;
+	margin-bottom: 60px;
+	overflow: hidden;
+	
+}
+.map_frame iframe{
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	height: 100%;
+}
+.copyright{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background-color: #1657af;
+	vertical-align: middle;
+	text-align: center;
+}
+.copyright h3{
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  width:20px;
+  height: 20px;
+  border:none;
+  background-color:transparent;
+  cursor: pointer;
+ }
+#myBtn i{
+	font-size: 35px;
+	color:#606060;
+}
+#myBtn:hover i{
+  color: #cf3034;
 }
