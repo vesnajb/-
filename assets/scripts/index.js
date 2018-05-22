@@ -1,15 +1,18 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {
+  FunctionS()};
 
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
-function myFunction() {
+function FunctionS() {
   if (window.pageYOffset >= sticky) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
   }
 }
+
+
 var slideIndex = 0;
 showSlides();
 var slides,dots;
@@ -85,4 +88,26 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }

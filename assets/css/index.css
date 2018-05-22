@@ -74,10 +74,9 @@ body, html{
 	z-index: 10;
 }
 .navigation{
-	float: left;
+	display: inline-block;
 	width:100%;
 }
-
 .navigation .burger_menu{
 	display: none;
 }
@@ -88,14 +87,14 @@ body, html{
 .main_menu .logo{
 	float:left;
 	margin:0;
-	width:;
+	/*width:;*/
 }
 .main_menu .logo a{
 	width:250px;
 	height:73px;
 	margin:5px 0 0 0;
 	padding:0;
-	background:url("../images/icons/logo_mk.png");
+	background:url("../images/icons/logo_mk.png") no-repeat;
 	display: inline-block;
 	background-size: 100%;
 }
@@ -167,15 +166,97 @@ body, html{
   width: 350px;
   border: 1px solid #606060;
 }
+.navigation .burger_menu{
+	float:right;
+	box-sizing: border-box;
+}
+.dropbtn {
+    background-color: #fff;
+    padding: 20px;
+    margin: 16px;
+    border: none;
+    cursor: pointer;
+    background-image: url(../images/icons/menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*.dropbtn img{
+	width: 28px;
+	height: 28px;
+	color:blue;
+}*/
+/*.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 250px;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color:#373435;
+    font-size: 15px;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+}
+
+.dropdown a:hover {
+	background-color: #6ad0f5;
+	color: #fff;
+}
+
+.show {
+	display:block;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
-
 .sticky + .content {
   padding-top: 49px;
 }
+
 .slider{
 	width:100%;
 	height: 800px;
